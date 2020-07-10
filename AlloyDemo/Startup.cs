@@ -1,5 +1,6 @@
 using System;
 using System.Web;
+using AlloyDemo.Features.RegisterPersonas;
 using EPiServer.Cms.UI.AspNetIdentity;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
@@ -43,6 +44,9 @@ namespace AlloyDemo
                         regenerateIdentity: (manager, user) => manager.GenerateUserIdentityAsync(user))
                 }
             });
+
+            // This registration is used to create users and groups automatically on start
+            //app.UseRegisterPersonas(() => HttpContext.Current.Request.IsLocal);
         }
     }
 }

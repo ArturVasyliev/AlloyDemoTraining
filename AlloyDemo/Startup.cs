@@ -1,6 +1,7 @@
 using System;
 using System.Web;
 using AlloyDemo.Features.RegisterPersonas;
+using AlloyDemo.Features.ResetAdmin;
 using EPiServer.Cms.UI.AspNetIdentity;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
@@ -47,6 +48,9 @@ namespace AlloyDemo
 
             // This registration is used to create users and groups automatically on start
             //app.UseRegisterPersonas(() => HttpContext.Current.Request.IsLocal);
+
+            // Remove to block reset of Admin user
+            //app.UseResetAdmin(() => HttpContext.Current.Request.IsLocal);
         }
     }
 }

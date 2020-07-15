@@ -3,6 +3,10 @@
 
   <language name="English" id="en">
 
+    <productpage>
+      <changed>Changed:</changed>
+    </productpage>
+    
     <contact>
       <email>E-mail</email>
       <phone>Phone</phone>
@@ -36,6 +40,14 @@
       <hits>hits</hits>
       <disabled>EPiServer Search is not configured or is not active for this website.</disabled>
     </searchpagetemplate>
+
+  </language>
+
+  <language name="Swedish" id="sv">
+
+    <productpage>
+      <changed>ändrats:</changed>
+    </productpage>
 
   </language>
 

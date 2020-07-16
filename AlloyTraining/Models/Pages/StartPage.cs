@@ -12,6 +12,7 @@ namespace AlloyTraining.Models.Pages
         GroupName = SiteGroupNames.Specialized,
         Order = 10)]
     [SiteStartIcon]
+    [AvailableContentTypes(Include = new[] { typeof(StandardPage) })]
     public class StartPage : SitePageData
     {
         [CultureSpecific]
@@ -43,5 +44,7 @@ namespace AlloyTraining.Models.Pages
             GroupName = SiteTabNames.SiteSettings,
             Order = 10)]
         public virtual string FooterText { get; set; }
+
+        public virtual decimal Price { get; set; }
     }
 }

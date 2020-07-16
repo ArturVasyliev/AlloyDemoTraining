@@ -1,0 +1,76 @@
+﻿.epi-createContentContainer .view-type-selector {
+    text-align: left;
+    padding: 2px 0 0 2px;
+}
+
+    .epi-createContentContainer .view-type-selector .view-type {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+        .epi-createContentContainer .view-type-selector .view-type:hover {
+            background-color: black;
+            background-position-x: -24px;
+        }
+
+.dgrid-list.epi-thumbnailContentList.gallery .dgrid-row,
+.Sleek .epi-focused .gallery .dgrid-row.dgrid-selected.ui-state-active {
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    line-height: 16px;
+    margin: 1px;
+    padding: 2px;
+    border: 1px solid #c0c0c0;
+}
+
+    .dgrid-list.epi-thumbnailContentList.gallery .dgrid-row:hover {
+        background-color: #f0f0f0;
+        border-color: #555;
+    }
+
+.dgrid-list.gallery .dgrid-row > img {
+    float: none;
+    display: inline-block;
+}
+
+.Sleek .epi-thumbnailContentList.dgrid-list.gallery .dgrid-row .epi-objectIcon {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    float: none;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    margin: 0;
+    background-image: none;
+}
+
+    .Sleek .epi-thumbnailContentList.dgrid-list.gallery .dgrid-row .epi-objectIcon:after {
+        content: 'x';
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        height: 48px;
+        width: 48px;
+    }
+
+.dgrid-list.gallery .dgrid-row > div.dojoxEllipsis {
+    display: block;
+    line-height: 16px;
+}
+
+.dgrid-list.epi-thumbnailContentList.gallery .dgrid-row .epi-iconContextMenu {
+    float: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+.dgrid-list.gallery .dgrid-row.dgrid-row-even {
+    background-color: #fff;
+}

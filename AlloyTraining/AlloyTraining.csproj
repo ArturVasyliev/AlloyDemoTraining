@@ -265,6 +265,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Blocks\EditorialBlock.cs" />
     <Compile Include="Models\Media\AnyFile.cs" />
     <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Media\PdfFile.cs" />
@@ -283,9 +284,7 @@
     <Compile Include="SiteTabNames.cs" />
     <Compile Include="SiteTags.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\Blocks\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="ClientResources\iPhone4\device-320x480.png" />
     <Content Include="ClientResources\iPhone4\iPhone4.css" />
@@ -372,6 +371,7 @@
     <Content Include="Views\Shared\Narrow.cshtml" />
     <Content Include="Views\Shared\Wide.cshtml" />
     <Content Include="Views\StartPageMobile\Index.cshtml" />
+    <Content Include="Views\Shared\EditorialBlock.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

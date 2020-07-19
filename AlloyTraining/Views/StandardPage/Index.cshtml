@@ -1,9 +1,9 @@
 ﻿@using AlloyTraining.Models.ViewModels
 @using AlloyTraining.Models.Pages
-@model PageViewModel<StandardPage> 
+@model PageViewModel<StandardPage>
 @{
-    Layout = "~/Views/Shared/Layouts/_LeftNavigation.cshtml"; 
-} 
+    Layout = "~/Views/Shared/Layouts/_LeftNavigation.cshtml";
+}
 <h1 @Html.EditAttributes(m => m.CurrentPage.MetaTitle)>
     @(Model.CurrentPage.MetaTitle ?? Model.CurrentPage.Name)
 </h1>
@@ -12,3 +12,4 @@
         @Html.PropertyFor(x => x.CurrentPage.MainBody)
     </div>
 </div>
+@Html.PropertyFor(m => m.CurrentPage.Author)

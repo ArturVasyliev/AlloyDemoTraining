@@ -33,6 +33,27 @@
                         </li>
                     </ul>
                 </div>
+<div class="navbar-search pull-right">
+  @if (Model.StartPage != null)
+  {
+    if (PageReference.IsNullOrEmpty(Model.StartPage.SearchPageLink))
+    {
+        if (EPiServer.Editor.PageEditing.PageIsInEditMode)
+        {
+            <div class="alert alert-danger">To enable search across the site, 
+                set the SearchPageLink property.</div>
+        }
+    }
+    else
+    {
+        <form action="@Model.StartPage.SearchPageLink.ExternalURLFromReference()" 
+              method="post">
+            <input type="text" class="search-query" name="q" id="SearchKeywords" placeholder="Search" />
+            <input type="submit" class="searchButton" id="SearchButton" value="" />
+        </form>
+    }
+  }
+</div>
             </div>
         </div>
     </div>

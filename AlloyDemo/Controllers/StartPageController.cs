@@ -3,13 +3,22 @@ using AlloyDemo.Models.Pages;
 using AlloyDemo.Models.ViewModels;
 using EPiServer.Web;
 using EPiServer.Web.Mvc;
+using EPiServer.Core;
+using EPiServer.Logging;
 
 namespace AlloyDemo.Controllers
 {
     public class StartPageController : PageControllerBase<StartPage>
     {
+        private readonly ILogger logger = LogManager.GetLogger();
+
         public ActionResult Index(StartPage currentPage)
         {
+            if (PageReference.IsNullOrEmpty(currentPage.SearchPageLink))
+            {
+                logger.Error("No 'Search page' is specified in 'Site settings'.");
+            }
+
             var model = PageViewModel.Create(currentPage);
 
             if (SiteDefinition.Current.StartPage.CompareToIgnoreWorkID(currentPage.ContentLink)) // Check if it is the StartPage or just a page of the StartPage type.

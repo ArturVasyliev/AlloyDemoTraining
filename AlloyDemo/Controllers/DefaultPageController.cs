@@ -19,6 +19,7 @@ namespace AlloyDemo.Controllers
     [TemplateDescriptor(Inherited = true)]
     public class DefaultPageController : PageControllerBase<SitePageData>
     {
+        //[EPiServer.Web.Mvc.ContentOutputCache]
         public ViewResult Index(SitePageData currentPage)
         {
             var model = CreateModel(currentPage);

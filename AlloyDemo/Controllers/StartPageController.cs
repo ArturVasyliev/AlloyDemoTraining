@@ -23,6 +23,10 @@ namespace AlloyDemo.Controllers
                 editHints.AddConnection(m => m.Layout.CustomerZonePages, p => p.CustomerZonePageLinks);
             }
 
+            Response.Cache.SetCacheability(System.Web.HttpCacheability.Public);
+            Response.Cache.SetExpires(System.DateTime.Now.AddHours(1));
+            Response.Cache.SetSlidingExpiration(true);
+
             return View(model);
         }
 

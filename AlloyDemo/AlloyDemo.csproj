@@ -383,6 +383,8 @@
     <Compile Include="Controllers\SearchPageController.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
     <Compile Include="Controllers\VideoFileController.cs" />
+    <Compile Include="Features\DeleteContent\DeleteContentPage.cs" />
+    <Compile Include="Features\DeleteContent\DeleteContentPageController.cs" />
     <Compile Include="Features\RegisterPersonas\RegisterPersonas.cs" />
     <Compile Include="Features\RegisterPersonas\RegisterPersonasController.cs" />
     <Compile Include="Features\ResetAdmin\ResetAdmin.cs" />
@@ -606,6 +608,8 @@
     <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\IOC\Index.cshtml" />
     <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\ContentTypeAnalyzer\Index.cshtml" />
     <Content Include="modules\_protected\EPiServer.DeveloperTools\module.config" />
+    <Content Include="Features\DeleteContent\DeleteContentPage.cshtml" />
+    <Content Include="Features\_ViewStart.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\SearchPage\Index.cshtml" />
     <Content Include="Views\_viewstart.cshtml" />

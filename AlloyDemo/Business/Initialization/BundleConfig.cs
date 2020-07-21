@@ -15,6 +15,7 @@ namespace AlloyDemo.Business.Initialization
             }
         }
 
+        // Bundling is implemented here
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {

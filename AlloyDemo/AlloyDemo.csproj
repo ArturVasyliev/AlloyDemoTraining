@@ -368,6 +368,7 @@
     <Compile Include="Business\UIDescriptors\ContainerPageUIDescriptor.cs" />
     <Compile Include="Controllers\ContactBlockController.cs" />
     <Compile Include="Controllers\DefaultPageController.cs" />
+    <Compile Include="Controllers\FAQListPageController.cs" />
     <Compile Include="Controllers\ImageFileController.cs" />
     <Compile Include="Controllers\PageControllerBase.cs" />
     <Compile Include="Controllers\PageListBlockController.cs" />
@@ -401,6 +402,8 @@
     <Compile Include="Models\Pages\ArticlePage.cs" />
     <Compile Include="Models\Pages\ContactPage.cs" />
     <Compile Include="Models\Pages\ContainerPage.cs" />
+    <Compile Include="Models\Pages\FAQItemPage.cs" />
+    <Compile Include="Models\Pages\FAQListPage.cs" />
     <Compile Include="Models\Pages\IHasRelatedContent.cs" />
     <Compile Include="Models\Pages\ISearchPage.cs" />
     <Compile Include="Models\Pages\LandingPage.cs" />
@@ -620,6 +623,7 @@
     <Content Include="Views\ImageFile\Index.cshtml" />
     <Content Include="Views\ContactBlock\Index.cshtml" />
     <Content Include="Views\ArticlePage\Index.cshtml" />
+    <Content Include="Views\FAQListPage\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

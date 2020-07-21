@@ -97,6 +97,9 @@
     <Reference Include="EPiServer.Data.Cache, Version=11.17.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\packages\EPiServer.Framework.11.17.0\lib\net461\EPiServer.Data.Cache.dll</HintPath>
     </Reference>
+    <Reference Include="EPiServer.DeveloperTools, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPiServer.DeveloperTools.3.5.0\lib\net472\EPiServer.DeveloperTools.dll</HintPath>
+    </Reference>
     <Reference Include="EPiServer.Enterprise, Version=11.17.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\packages\EPiServer.CMS.Core.11.17.0\lib\net461\EPiServer.Enterprise.dll</HintPath>
     </Reference>
@@ -500,6 +503,7 @@
     <Content Include="modules\_protected\EPiServer.Forms.Samples\Views\ElementBlocks\RecaptchaElementBlock.ascx" />
     <Content Include="modules\_protected\EPiServer.Forms.Samples\Views\Shared\EditorTemplates\FormModel.ascx" />
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
+    <Content Include="readme.txt" />
     <Content Include="Resources\LanguageFiles\ContentTypeNames-sv.xml" />
     <Content Include="Resources\LanguageFiles\ContentTypeNames.xml" />
     <Content Include="Resources\LanguageFiles\Display.xml" />
@@ -585,6 +589,22 @@
     <Content Include="modules\_protected\EPiServer.Labs.LanguageManager\EPiServer.LanguageManager.config" />
     <Content Include="modules\_protected\EPiServer.Labs.LanguageManager\EPiServer.Labs.LanguageManager.zip" />
     <Content Include="Features\ResetAdmin\ResetAdmin.cshtml" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\Web.config" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\ViewEngineLocations\Index.cshtml" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\TimeMeters\Index.cshtml" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\Templates\Index.cshtml" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\Shared\DevToolsMaster.cshtml" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\Routes\Index.cshtml" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\RevertToDefault\Index.cshtml" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\RemoteEvent\Index.cshtml" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\ModuleDependencies\Index.cshtml" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\MemoryDump\Index.cshtml" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\LogViewer\Show.cshtml" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\LocalObjectCache\Index.cshtml" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\LoadedAssemblies\Index.cshtml" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\IOC\Index.cshtml" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\Views\ContentTypeAnalyzer\Index.cshtml" />
+    <Content Include="modules\_protected\EPiServer.DeveloperTools\module.config" />
     <None Include="packages.config" />
     <Content Include="Views\SearchPage\Index.cshtml" />
     <Content Include="Views\_viewstart.cshtml" />

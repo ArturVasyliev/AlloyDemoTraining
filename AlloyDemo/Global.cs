@@ -7,6 +7,8 @@ namespace AlloyDemo
 
     public class Global
     {
+        // Uncomment to secure LoginPath
+        // public static readonly string LoginPath = "/SecretUtil/login.aspx";
         public static readonly string LoginPath = "/util/login.aspx";
         public static readonly string AppRelativeLoginPath = string.Format("~{0}", LoginPath);
 
